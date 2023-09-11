@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71595D6A2AB56FD400B12690 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71595D682AB56FD400B12690 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		718B1A562ABBEB5600E5D54A /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 718B1A542ABBEB5600E5D54A /* image.cpp */; };
+		718B1A572ABBEB5600E5D54A /* image.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 718B1A552ABBEB5600E5D54A /* image.hpp */; };
+		719558A32AAEC01B00BD6730 /* logging.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7195589B2AAEC01800BD6730 /* logging.hpp */; };
+		719558A42AAEC01B00BD6730 /* logging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7195589C2AAEC01900BD6730 /* logging.cpp */; };
+		719558A52AAEC01B00BD6730 /* library.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7195589D2AAEC01A00BD6730 /* library.cpp */; };
+		719558A62AAEC01B00BD6730 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7195589F2AAEC01A00BD6730 /* player.cpp */; };
+		719558A72AAEC01B00BD6730 /* minecraft.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 719558A02AAEC01A00BD6730 /* minecraft.hpp */; };
+		719558A82AAEC01B00BD6730 /* minecraft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 719558A12AAEC01A00BD6730 /* minecraft.cpp */; };
+		719558A92AAEC01B00BD6730 /* player.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 719558A22AAEC01A00BD6730 /* player.hpp */; };
+		719558AC2AAEC02E00BD6730 /* client.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 719558AA2AAEC02D00BD6730 /* client.hpp */; };
+		719558AD2AAEC02E00BD6730 /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 719558AB2AAEC02E00BD6730 /* client.cpp */; };
+		71A200942ABF65E1000D1AD8 /* liboatpp-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A200922ABF65E1000D1AD8 /* liboatpp-test.a */; };
+		71A200952ABF65E1000D1AD8 /* liboatpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A200932ABF65E1000D1AD8 /* liboatpp.a */; };
+		71A200982ABF65F9000D1AD8 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A200962ABF65F9000D1AD8 /* server.cpp */; };
+		71A200992ABF65F9000D1AD8 /* server.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 71A200972ABF65F9000D1AD8 /* server.hpp */; };
+		71A200AB2AC0A3ED000D1AD8 /* javaclass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71A200A92AC0A3ED000D1AD8 /* javaclass.cpp */; };
+		71A200AC2AC0A3ED000D1AD8 /* javaclass.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 71A200AA2AC0A3ED000D1AD8 /* javaclass.hpp */; };
+		71CF01ED2AB015CA00892399 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CF01EC2AB015CA00892399 /* QuartzCore.framework */; };
+		71CF01EF2AB015CE00892399 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CF01EE2AB015CE00892399 /* Metal.framework */; };
+		71D21BBE2AD7996400029009 /* initialize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D21BBC2AD7996400029009 /* initialize.cpp */; };
+		71D21BBF2AD7996400029009 /* initialize.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 71D21BBD2AD7996400029009 /* initialize.hpp */; };
+		71FAACFA2AD1D69000E07E74 /* javaobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71FAACF82AD1D69000E07E74 /* javaobject.cpp */; };
+		71FAACFB2AD1D69000E07E74 /* javaobject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 71FAACF92AD1D69000E07E74 /* javaobject.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		71595D6B2AB56FD400B12690 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				71595D6A2AB56FD400B12690 /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		71595D682AB56FD400B12690 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		718B1A542ABBEB5600E5D54A /* image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = image.cpp; sourceTree = "<group>"; };
+		718B1A552ABBEB5600E5D54A /* image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = image.hpp; sourceTree = "<group>"; };
+		719558692AAE9C0600BD6730 /* libmath.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmath.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7195589B2AAEC01800BD6730 /* logging.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = logging.hpp; sourceTree = "<group>"; };
+		7195589C2AAEC01900BD6730 /* logging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logging.cpp; sourceTree = "<group>"; };
+		7195589D2AAEC01A00BD6730 /* library.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = library.cpp; sourceTree = "<group>"; };
+		7195589F2AAEC01A00BD6730 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		719558A02AAEC01A00BD6730 /* minecraft.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = minecraft.hpp; sourceTree = "<group>"; };
+		719558A12AAEC01A00BD6730 /* minecraft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minecraft.cpp; sourceTree = "<group>"; };
+		719558A22AAEC01A00BD6730 /* player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = player.hpp; sourceTree = "<group>"; };
+		719558AA2AAEC02D00BD6730 /* client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = client.hpp; sourceTree = "<group>"; };
+		719558AB2AAEC02E00BD6730 /* client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = client.cpp; sourceTree = "<group>"; };
+		71A200922ABF65E1000D1AD8 /* liboatpp-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liboatpp-test.a"; path = "../../../usr/local/lib/oatpp-1.3.0/liboatpp-test.a"; sourceTree = "<group>"; };
+		71A200932ABF65E1000D1AD8 /* liboatpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liboatpp.a; path = "../../../usr/local/lib/oatpp-1.3.0/liboatpp.a"; sourceTree = "<group>"; };
+		71A200962ABF65F9000D1AD8 /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
+		71A200972ABF65F9000D1AD8 /* server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = server.hpp; sourceTree = "<group>"; };
+		71A200A92AC0A3ED000D1AD8 /* javaclass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = javaclass.cpp; sourceTree = "<group>"; };
+		71A200AA2AC0A3ED000D1AD8 /* javaclass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = javaclass.hpp; sourceTree = "<group>"; };
+		71CF01C42AB012D000892399 /* libjvm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjvm.dylib; path = "../zulu-jdk11/zulu-11.jdk/Contents/Home/lib/server/libjvm.dylib"; sourceTree = "<group>"; };
+		71CF01EC2AB015CA00892399 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		71CF01EE2AB015CE00892399 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		71D21BBC2AD7996400029009 /* initialize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = initialize.cpp; sourceTree = "<group>"; };
+		71D21BBD2AD7996400029009 /* initialize.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = initialize.hpp; sourceTree = "<group>"; };
+		71FAACF82AD1D69000E07E74 /* javaobject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = javaobject.cpp; sourceTree = "<group>"; };
+		71FAACF92AD1D69000E07E74 /* javaobject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = javaobject.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		719558672AAE9C0600BD6730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CF01EF2AB015CE00892399 /* Metal.framework in Frameworks */,
+				71CF01ED2AB015CA00892399 /* QuartzCore.framework in Frameworks */,
+				71A200942ABF65E1000D1AD8 /* liboatpp-test.a in Frameworks */,
+				71A200952ABF65E1000D1AD8 /* liboatpp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		718B1A532ABBEB4100E5D54A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				718B1A542ABBEB5600E5D54A /* image.cpp */,
+				718B1A552ABBEB5600E5D54A /* image.hpp */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		719558602AAE9C0600BD6730 = {
+			isa = PBXGroup;
+			children = (
+				71A200A82AC0A3CA000D1AD8 /* mappings */,
+				71A200962ABF65F9000D1AD8 /* server.cpp */,
+				71A200972ABF65F9000D1AD8 /* server.hpp */,
+				718B1A532ABBEB4100E5D54A /* util */,
+				719558AB2AAEC02E00BD6730 /* client.cpp */,
+				719558AA2AAEC02D00BD6730 /* client.hpp */,
+				7195589D2AAEC01A00BD6730 /* library.cpp */,
+				7195589C2AAEC01900BD6730 /* logging.cpp */,
+				7195589B2AAEC01800BD6730 /* logging.hpp */,
+				7195589E2AAEC01A00BD6730 /* minecraft */,
+				7195586A2AAE9C0600BD6730 /* Products */,
+				719558942AAEB80E00BD6730 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7195586A2AAE9C0600BD6730 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				719558692AAE9C0600BD6730 /* libmath.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		719558942AAEB80E00BD6730 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71A200922ABF65E1000D1AD8 /* liboatpp-test.a */,
+				71A200932ABF65E1000D1AD8 /* liboatpp.a */,
+				71595D682AB56FD400B12690 /* SDL2.framework */,
+				71CF01EE2AB015CE00892399 /* Metal.framework */,
+				71CF01EC2AB015CA00892399 /* QuartzCore.framework */,
+				71CF01C42AB012D000892399 /* libjvm.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7195589E2AAEC01A00BD6730 /* minecraft */ = {
+			isa = PBXGroup;
+			children = (
+				7195589F2AAEC01A00BD6730 /* player.cpp */,
+				719558A02AAEC01A00BD6730 /* minecraft.hpp */,
+				719558A12AAEC01A00BD6730 /* minecraft.cpp */,
+				719558A22AAEC01A00BD6730 /* player.hpp */,
+			);
+			path = minecraft;
+			sourceTree = "<group>";
+		};
+		71A200A82AC0A3CA000D1AD8 /* mappings */ = {
+			isa = PBXGroup;
+			children = (
+				71A200A92AC0A3ED000D1AD8 /* javaclass.cpp */,
+				71A200AA2AC0A3ED000D1AD8 /* javaclass.hpp */,
+				71FAACF82AD1D69000E07E74 /* javaobject.cpp */,
+				71FAACF92AD1D69000E07E74 /* javaobject.hpp */,
+				71D21BBC2AD7996400029009 /* initialize.cpp */,
+				71D21BBD2AD7996400029009 /* initialize.hpp */,
+			);
+			path = mappings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		719558652AAE9C0600BD6730 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719558A32AAEC01B00BD6730 /* logging.hpp in Headers */,
+				719558AC2AAEC02E00BD6730 /* client.hpp in Headers */,
+				71D21BBF2AD7996400029009 /* initialize.hpp in Headers */,
+				71A200992ABF65F9000D1AD8 /* server.hpp in Headers */,
+				71A200AC2AC0A3ED000D1AD8 /* javaclass.hpp in Headers */,
+				718B1A572ABBEB5600E5D54A /* image.hpp in Headers */,
+				719558A92AAEC01B00BD6730 /* player.hpp in Headers */,
+				719558A72AAEC01B00BD6730 /* minecraft.hpp in Headers */,
+				71FAACFB2AD1D69000E07E74 /* javaobject.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		719558682AAE9C0600BD6730 /* math */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7195586D2AAE9C0600BD6730 /* Build configuration list for PBXNativeTarget "math" */;
+			buildPhases = (
+				719558652AAE9C0600BD6730 /* Headers */,
+				719558662AAE9C0600BD6730 /* Sources */,
+				719558672AAE9C0600BD6730 /* Frameworks */,
+				71595D6B2AB56FD400B12690 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = math;
+			productName = math;
+			productReference = 719558692AAE9C0600BD6730 /* libmath.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		719558612AAE9C0600BD6730 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					719558682AAE9C0600BD6730 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 719558642AAE9C0600BD6730 /* Build configuration list for PBXProject "math" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 719558602AAE9C0600BD6730;
+			productRefGroup = 7195586A2AAE9C0600BD6730 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				719558682AAE9C0600BD6730 /* math */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		719558662AAE9C0600BD6730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FAACFA2AD1D69000E07E74 /* javaobject.cpp in Sources */,
+				718B1A562ABBEB5600E5D54A /* image.cpp in Sources */,
+				719558AD2AAEC02E00BD6730 /* client.cpp in Sources */,
+				71A200982ABF65F9000D1AD8 /* server.cpp in Sources */,
+				719558A62AAEC01B00BD6730 /* player.cpp in Sources */,
+				719558A42AAEC01B00BD6730 /* logging.cpp in Sources */,
+				719558A52AAEC01B00BD6730 /* library.cpp in Sources */,
+				71A200AB2AC0A3ED000D1AD8 /* javaclass.cpp in Sources */,
+				719558A82AAEC01B00BD6730 /* minecraft.cpp in Sources */,
+				71D21BBE2AD7996400029009 /* initialize.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7195586B2AAE9C0600BD6730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7195586C2AAE9C0600BD6730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7195586E2AAE9C0600BD6730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(JAVA_HOME)/include/darwin",
+					"$(JAVA_HOME)/include",
+					"\"/usr/local/include/oatpp-1.3.0/oatpp\"",
+				);
+				JAVA_HOME = "/Users/derekli/zulu-jdk11/zulu-11.jdk/Contents/Home";
+				LD_RUNPATH_SEARCH_PATHS = "$(JAVA_HOME)/lib/server";
+				LIBRARY_SEARCH_PATHS = (
+					"$(JAVA_HOME)/lib/server",
+					"\"/usr/local/lib/oatpp-1.3.0\"",
+				);
+				OTHER_LDFLAGS = "-ljvm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7195586F2AAE9C0600BD6730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(JAVA_HOME)/include/darwin",
+					"$(JAVA_HOME)/include",
+					"\"/usr/local/include/oatpp-1.3.0/oatpp\"",
+				);
+				JAVA_HOME = "/Users/derekli/zulu-jdk11/zulu-11.jdk/Contents/Home";
+				LD_RUNPATH_SEARCH_PATHS = "$(JAVA_HOME)/lib/server";
+				LIBRARY_SEARCH_PATHS = (
+					"$(JAVA_HOME)/lib/server",
+					"\"/usr/local/lib/oatpp-1.3.0\"",
+				);
+				OTHER_LDFLAGS = "-ljvm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		719558642AAE9C0600BD6730 /* Build configuration list for PBXProject "math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7195586B2AAE9C0600BD6730 /* Debug */,
+				7195586C2AAE9C0600BD6730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7195586D2AAE9C0600BD6730 /* Build configuration list for PBXNativeTarget "math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7195586E2AAE9C0600BD6730 /* Debug */,
+				7195586F2AAE9C0600BD6730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 719558612AAE9C0600BD6730 /* Project object */;
+}
