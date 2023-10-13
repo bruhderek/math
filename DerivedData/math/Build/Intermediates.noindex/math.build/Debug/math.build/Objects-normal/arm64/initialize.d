@@ -1,5 +1,6 @@
 dependencies: /Users/derekli/math/mappings/initialize.cpp \
   /Users/derekli/math/mappings/initialize.hpp \
+  /Users/derekli/math/mappings/javaobject.hpp \
   /Users/derekli/math/mappings/javaclass.hpp \
   /Users/derekli/math/mappings/../client.hpp \
   /Users/derekli/zulu-jdk11/zulu-11.jdk/Contents/Home/include/jvmti.h \

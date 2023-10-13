@@ -16,6 +16,7 @@
 #include "util/image.hpp"
 #include "server.hpp"
 #include "mappings/javaobject.hpp"
+#include "mappings/initialize.hpp"
 
 void init() {
     jsize count;
@@ -42,7 +43,7 @@ void init() {
     std::thread serverthread(startServer);
     serverthread.detach();
     
-    String::initialize();
+    initialize();
     
 //    auto Minecraft = std::make_unique<CMinecraft>();
     

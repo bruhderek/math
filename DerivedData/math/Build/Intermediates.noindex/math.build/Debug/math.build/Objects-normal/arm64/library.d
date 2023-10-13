@@ -9,4 +9,5 @@ dependencies: /Users/derekli/math/library.cpp \
   /Users/derekli/math/util/image.hpp /Users/derekli/math/server.hpp \
   /Users/derekli/math/mappings/javaobject.hpp \
   /Users/derekli/math/mappings/javaclass.hpp \
-  /Users/derekli/math/mappings/../client.hpp
+  /Users/derekli/math/mappings/../client.hpp \
+  /Users/derekli/math/mappings/initialize.hpp

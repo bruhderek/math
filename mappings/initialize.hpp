@@ -10,4 +10,6 @@
 
 #include <stdio.h>
 
+void initialize();
+
 #endif /* initialize_hpp */

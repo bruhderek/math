@@ -29,6 +29,8 @@
 		71CF01EF2AB015CE00892399 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CF01EE2AB015CE00892399 /* Metal.framework */; };
 		71D21BBE2AD7996400029009 /* initialize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D21BBC2AD7996400029009 /* initialize.cpp */; };
 		71D21BBF2AD7996400029009 /* initialize.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 71D21BBD2AD7996400029009 /* initialize.hpp */; };
+		71D21BC22AD8EFCC00029009 /* javaobjectimpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D21BC02AD8EFCC00029009 /* javaobjectimpl.cpp */; };
+		71D21BC32AD8EFCC00029009 /* javaobjectimpl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 71D21BC12AD8EFCC00029009 /* javaobjectimpl.hpp */; };
 		71FAACFA2AD1D69000E07E74 /* javaobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71FAACF82AD1D69000E07E74 /* javaobject.cpp */; };
 		71FAACFB2AD1D69000E07E74 /* javaobject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 71FAACF92AD1D69000E07E74 /* javaobject.hpp */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,8 @@
 		71CF01EE2AB015CE00892399 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		71D21BBC2AD7996400029009 /* initialize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = initialize.cpp; sourceTree = "<group>"; };
 		71D21BBD2AD7996400029009 /* initialize.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = initialize.hpp; sourceTree = "<group>"; };
+		71D21BC02AD8EFCC00029009 /* javaobjectimpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = javaobjectimpl.cpp; sourceTree = "<group>"; };
+		71D21BC12AD8EFCC00029009 /* javaobjectimpl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = javaobjectimpl.hpp; sourceTree = "<group>"; };
 		71FAACF82AD1D69000E07E74 /* javaobject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = javaobject.cpp; sourceTree = "<group>"; };
 		71FAACF92AD1D69000E07E74 /* javaobject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = javaobject.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +163,8 @@
 				71FAACF92AD1D69000E07E74 /* javaobject.hpp */,
 				71D21BBC2AD7996400029009 /* initialize.cpp */,
 				71D21BBD2AD7996400029009 /* initialize.hpp */,
+				71D21BC02AD8EFCC00029009 /* javaobjectimpl.cpp */,
+				71D21BC12AD8EFCC00029009 /* javaobjectimpl.hpp */,
 			);
 			path = mappings;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				719558A32AAEC01B00BD6730 /* logging.hpp in Headers */,
+				71D21BC32AD8EFCC00029009 /* javaobjectimpl.hpp in Headers */,
 				719558AC2AAEC02E00BD6730 /* client.hpp in Headers */,
 				71D21BBF2AD7996400029009 /* initialize.hpp in Headers */,
 				71A200992ABF65F9000D1AD8 /* server.hpp in Headers */,
@@ -210,7 +217,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					719558682AAE9C0600BD6730 = {
 						CreatedOnToolsVersion = 14.2;
@@ -247,6 +254,7 @@
 				719558A62AAEC01B00BD6730 /* player.cpp in Sources */,
 				719558A42AAEC01B00BD6730 /* logging.cpp in Sources */,
 				719558A52AAEC01B00BD6730 /* library.cpp in Sources */,
+				71D21BC22AD8EFCC00029009 /* javaobjectimpl.cpp in Sources */,
 				71A200AB2AC0A3ED000D1AD8 /* javaclass.cpp in Sources */,
 				719558A82AAEC01B00BD6730 /* minecraft.cpp in Sources */,
 				71D21BBE2AD7996400029009 /* initialize.cpp in Sources */,
@@ -289,9 +297,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -347,9 +357,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -369,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
@@ -397,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
