@@ -6,3 +6,5 @@
 //
 
 #include "javaobject.hpp"
+
+std::map<std::string, JavaClass*> classes = std::map<std::string, JavaClass*>();

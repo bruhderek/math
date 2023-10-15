@@ -10,17 +10,19 @@
 
 #include <iostream>
 #include <vector>
+#include <map>
 #include <cstdarg>
 #include "javaclass.hpp"
 #include "../client.hpp"
-#define STATICINITIALIZE static void initialize() { javaClass = new JavaClass(client->getClass(className), std::string(className)); }
+#define STATICINITIALIZE static void initialize() { classes[className] = new JavaClass(client->getClass(className), std::string(className)); }
+
+extern std::map<std::string, JavaClass*> classes;
 
 typedef unsigned char byte;
 
 class JavaObject {
 protected:
     const inline static char *className = "java.lang.Object";
-    inline static JavaClass *javaClass = nullptr;
     jobject object;
 public:
     STATICINITIALIZE;

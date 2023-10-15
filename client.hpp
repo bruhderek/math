@@ -39,7 +39,18 @@ public:
             jstring name = (jstring) env->CallObjectMethod(classesPtr[i], getName);
             const char* className = env->GetStringUTFChars(name, 0);
             
-            // std::cout << className << std::endl;
+//            std::cout << className << ": " << std::endl;
+//            jmethodID* methodPtr;
+//            jint methodAmount;
+//            jvmti->GetClassMethods(classesPtr[i], &methodAmount, &methodPtr);
+//            for (int j = 0; j < methodAmount; j++) {
+//                char *name;
+//                char *signature;
+//                char *generic;
+//                jvmti->GetMethodName(methodPtr[j], &name, &signature, &generic);
+//                std::cout << "  Name: " << name << std::endl;
+//                std::cout << "  signature: " << signature << std::endl;
+//            }
             
             classes.emplace(std::make_pair((std::string) className, classesPtr[i]));
             env->ReleaseStringUTFChars(name, className);
@@ -88,10 +99,8 @@ public:
     }
     
     jclass getClass(std::string className) {
-        std::cout << "Getting class " << className << std::endl;
         if (classes.contains(className))
             return classes.at(className);
-        std::cout << "Class " << className << " is NULL" << std::endl;
         return NULL;
     }
 private:

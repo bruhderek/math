@@ -17,6 +17,7 @@
 #include "server.hpp"
 #include "mappings/javaobject.hpp"
 #include "mappings/initialize.hpp"
+#include "mappings/javaobjectimpl.hpp"
 
 void init() {
     jsize count;
@@ -44,6 +45,11 @@ void init() {
     serverthread.detach();
     
     initialize();
+    
+    while (true) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(5));
+        PlayerC
+    }
     
 //    auto Minecraft = std::make_unique<CMinecraft>();
     

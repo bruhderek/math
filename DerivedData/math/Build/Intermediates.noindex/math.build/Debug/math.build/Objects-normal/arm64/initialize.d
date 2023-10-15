@@ -1,5 +1,6 @@
 dependencies: /Users/derekli/math/mappings/initialize.cpp \
   /Users/derekli/math/mappings/initialize.hpp \
+  /Users/derekli/math/mappings/javaobjectimpl.hpp \
   /Users/derekli/math/mappings/javaobject.hpp \
   /Users/derekli/math/mappings/javaclass.hpp \
   /Users/derekli/math/mappings/../client.hpp \
