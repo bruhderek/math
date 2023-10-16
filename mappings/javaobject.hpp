@@ -38,6 +38,10 @@ public:
         this->object = newObject;
     }
     
+    jobject getObject() {
+        return this->object;
+    }
+    
     operator jobject() {
         return this->object;
     }

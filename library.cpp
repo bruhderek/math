@@ -11,7 +11,6 @@
 #include <jni.h>
 #include "client.hpp"
 #include <chrono>
-#include "minecraft/minecraft.hpp"
 #include "logging.hpp"
 #include "util/image.hpp"
 #include "server.hpp"
@@ -26,7 +25,7 @@ void init() {
     
     if (res == JNI_EDETACHED) res = client->vm->AttachCurrentThread((void**) &client->env, nullptr);
     
-    // setupConsole();
+//    setupConsole();
     
     if (client->env == nullptr) return;
     
@@ -48,16 +47,35 @@ void init() {
     
     while (true) {
         std::this_thread::sleep_for(std::chrono::milliseconds(5));
-        PlayerC
+        if (Minecraft::getMinecraft().f_theWorld() == NULL) continue;
+        if (!Minecraft::getMinecraft().f_inGameHasFocus()) continue;
+        
+        EntityPlayerSP player = Minecraft::getMinecraft().f_thePlayer();
+        PlayerControllerMP controller = Minecraft::getMinecraft().f_playerController();
+        
+        ArrayList entities = Minecraft::getMinecraft().f_theWorld().f_loadedEntityList().getObject();
+        for (int i = 0; i < 50; i++) {
+            std::cout << std::endl;
+        }
+        for (int i = 0; i < entities.size(); i++) {
+            Entity e = entities.get(i).getObject();
+            // killaura
+            if (e.getDistance(player.f_posX(), player.f_posY(), player.f_posZ()) < 6.0) {
+                if (e.equals(player)) continue;
+                Class entityLiving(classes["net.minecraft.entity.EntityLiving"]->getClass());
+                if (!entityLiving.isAssignableFrom(e.getClass())) continue;
+                if (e.f_isDead()) continue;
+                controller.attackEntity(player.getObject(), e.getObject());
+                player.swingItem();
+            }
+        }
+        
+        
+        if (client->env->ExceptionCheck() == JNI_TRUE) {
+            client->env->ExceptionDescribe();
+            client->env->ExceptionClear();
+        }
     }
-    
-//    auto Minecraft = std::make_unique<CMinecraft>();
-    
-//    while (true) {
-//        std::this_thread::sleep_for(std::chrono::milliseconds(5));
-//        CPlayer player = Minecraft->GetLocalPlayer();
-        //            std::cout << player.isSneaking() << std::endl;
-//    }
 }
 
 __attribute__((constructor)) static void install() {
