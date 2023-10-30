@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'math' in project 'math' (no dependencies)
