@@ -1,0 +1,3 @@
+/Users/derekli/CLionProjects/math/cmake-build-debug/CMakeFiles/math.dir
+/Users/derekli/CLionProjects/math/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/derekli/CLionProjects/math/cmake-build-debug/CMakeFiles/rebuild_cache.dir
